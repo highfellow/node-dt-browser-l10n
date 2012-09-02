@@ -1,0 +1,28 @@
+{
+  "author": "Andrew Baxter <andy@highfellow.org> (http://highfellow.org)",
+  "name": "dt-dom-l10n",
+  "description": "A localisation plugin for node-dynamictemplate's dom based adapters",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/highfellow/node-dt-dom-l10n.git"
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "dependencies": {
+    "l10n": "git://github.com/highfellow/node-l10n.git",
+    "l10n-browser": "git://github.com/highfellow/node-l10n-browser.git"
+    "dynamictemplate": "~0.5.6",
+    "dt-jquery": "~0.3.3"
+  },
+  "main": "dt-dom-l10n.js",
+  "keywords": ["l10n","localisation","dynamictemplate"],
+  "scripts": {
+  },
+  "devDependencies": {
+    "browserify": "~1.15.4",
+    "coffee-script": "~1.2.0",
+  },
+  "optionalDependencies": {}
+}

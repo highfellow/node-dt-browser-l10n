@@ -1,0 +1,11 @@
+
+body {
+    background:white;
+    color: black;
+    font-family: sans;
+}
+
+p, a {
+    font-size: 14pt;
+    text-decoration:none;
+}
