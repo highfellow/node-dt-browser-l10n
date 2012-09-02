@@ -390,7 +390,7 @@ process.binding = function (name) {
 require.define("/package.json",function(require,module,exports,__dirname,__filename,process){module.exports = {}
 });
 
-require.define("/dt-dom-l10n.js",function(require,module,exports,__dirname,__filename,process){(function() {
+require.define("/dt-browser-l10n.js",function(require,module,exports,__dirname,__filename,process){(function() {
   var EVENTS, L10n, L10n_Browser, maker;
 
   L10n = require('l10n');
@@ -2110,11 +2110,11 @@ function lastBraceInKey(str) {
 });
 
 require.define("/example/example.coffee",function(require,module,exports,__dirname,__filename,process){(function() {
-  var Template, dtDomL10n, jqueryify, lang, url, _ref, _ref1, _ref2;
+  var Template, dtBrowserL10n, jqueryify, lang, url, _ref, _ref1, _ref2;
 
   _ref = window.dynamictemplate, Template = _ref.Template, jqueryify = _ref.jqueryify;
 
-  dtDomL10n = require('../dt-dom-l10n.js');
+  dtBrowserL10n = require('../dt-browser-l10n.js');
 
   url = require('url');
 
@@ -2126,7 +2126,7 @@ require.define("/example/example.coffee",function(require,module,exports,__dirna
 
   console.log("lang:", lang);
 
-  dtDomL10n('data.properties', lang, function(err, plugin) {
+  dtBrowserL10n('data.properties', lang, function(err, plugin) {
     var tpl;
     if (err) {
       return;
