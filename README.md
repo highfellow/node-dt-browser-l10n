@@ -1,5 +1,5 @@
-node-dt-dom-l10n
-================
+node-dt-browser-l10n
+====================
 
 A localisation plugin for node-dynamictemplate's browser adapters. This should work with either dt-jquery or dt-dom, but has only been tested with dt-jquery.
 

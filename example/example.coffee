@@ -1,6 +1,6 @@
 # init the plugin (which loads the resource file on a callback)
 { Template, jqueryify } = window.dynamictemplate
-dtDomL10n = require '../dt-dom-l10n.js'
+dtBrowserL10n = require '../dt-browser-l10n.js'
 url = require 'url'
 
 lang = url.parse(document.URL, true)?.query?.lang
@@ -10,7 +10,7 @@ console.log "lang:", lang
 # the module exports a function which loads the resources
 # then calls a callback with the actual plugin function as
 # the second parameter of the callback function.
-dtDomL10n 'data.properties', lang, (err, plugin) ->
+dtBrowserL10n 'data.properties', lang, (err, plugin) ->
   # here the resource is loaded, and the plugin function is in plugin.
   return if err
 
