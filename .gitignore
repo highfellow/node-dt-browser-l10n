@@ -1,6 +1,6 @@
 *.swp
 node_modules
 npm-debug.log
-dt-dom-l10n.js
+dt-browser-l10n.js
 example/example.js
 example/lib
